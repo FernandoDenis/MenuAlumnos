@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivityNuevo">
+
+    <!-- Título en la parte superior -->
+    <TextView
+        android:id="@+id/tvNuevoAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Alumno"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Campo para Nombre -->
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Campo para Número de Cuenta -->
+    <EditText
+        android:id="@+id/txtCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Número de Cuenta"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Campo para Correo Electrónico -->
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Campo para URL de Imagen -->
+    <EditText
+        android:id="@+id/txtImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="URL de Imagen"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+</LinearLayout>
